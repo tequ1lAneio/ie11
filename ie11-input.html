@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" placeholder="hahaha" id="input">
+	<script src="jquery.js"></script>
+	<script>
+		console.log(input)
+		input.oninput = function () {
+			console.log('事件触发')
+		}
+		$('input').attr('placeholder', 'asdf')
+	</script>
+</body>
+</html>
